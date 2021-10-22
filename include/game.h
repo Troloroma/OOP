@@ -1,10 +1,12 @@
 using namespace std;
 #pragma once
-#include "field.h"
+
+#include "draw.h"
 
 class Game{
 private:
     Field *field;
+    Draw drawer;
 public:
     Game(int, int);
     ~Game();

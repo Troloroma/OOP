@@ -10,14 +10,15 @@ private:
     void createField(int width, int height);
     void createField();
     void createField(int size);
-    void drawField(int width, int height);
-    string getRandom(int width, int height);
-    Grid** grid;
 public:
+    Grid** grid;
     Field(int width, int height);
     Field(const Field &);   //копирование
     Field &operator=(const Field &);
     Field(Field &&);
     Field &operator=(Field &&);
     ~Field();
+    Grid getCell(int, int);
+    int getHeight();
+    int getWidth();
 };

@@ -1,25 +1,25 @@
 #include <iostream>
 using namespace std;
 #pragma once
-#include "grid_type.h"
 #include "../include/GridEntity.h"
 
 class Grid{
 private:
-    GridEntity entity;
+    //GridEntity entity;
     int x = 0;
     int y = 0;
-    int type;
     bool passable;
     char value = '_';
 public:
+    enum Type {BORDER, START, END, EMPTY};
+    Type type;
     Grid();
-    Grid(int x, int y, int type);
+    Grid(int x, int y, Type type);
     int getX();
     int getY();
-    int getItem();
-    int getTypeOfGrid();
-    void setValue(int type);
+    Type getTypeOfGrid();
+    void setTypeOfGrid(Type type);
+    void setValue(Type type);
     bool isPassable();
     char getValue();
 };

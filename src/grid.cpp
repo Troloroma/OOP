@@ -1,6 +1,6 @@
 #include "../include/grid.h"
 
-Grid::Grid(int x, int y, int type):
+Grid::Grid(int x, int y, Type type):
     x(x),
     y(y),
     type(type){
@@ -23,16 +23,11 @@ char Grid::getValue(){
     return value;
 }
 
-int Grid::getItem(){
-    //returns item
-    return 0;
-}
-
-int Grid::getTypeOfGrid(){
+Grid::Type Grid::getTypeOfGrid(){
     return type;
 }
 
-void Grid::setValue(int type){
+void Grid::setValue(Type type){
     if (type == BORDER)
         value = '#';
     else if (type == START)
@@ -41,6 +36,10 @@ void Grid::setValue(int type){
         value = 'E';
     else 
         value = '_';
+}
+
+void Grid::setTypeOfGrid(Type type){
+    this->type = type;
 }
 
 bool Grid::isPassable(){

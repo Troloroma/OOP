@@ -88,7 +88,7 @@ void Field::createField(int size){
     createField(size, size);
 }
 
-Grid Field::getCell(int x, int y){
+Grid Field::getGrid(int x, int y){
     return grid[x][y];
 }
 

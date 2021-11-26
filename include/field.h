@@ -3,6 +3,7 @@ using namespace std;
 #include "grid.h"
 #include <string.h>
 
+class Grid;
 class Field{
 private:
     int height = 0;
@@ -18,7 +19,7 @@ public:
     Field(Field &&);
     Field &operator=(Field &&);
     ~Field();
-    Grid getCell(int, int);
+    Grid getGrid(int, int);
     int getHeight();
     int getWidth();
 };

@@ -3,14 +3,16 @@ using namespace std;
 #pragma once
 #include "../include/GridEntity.h"
 
+class GridEntity;
 class Grid{
 private:
-    //GridEntity entity;
     int x = 0;
     int y = 0;
     bool passable;
-    char value = '_';
+    char value;
+
 public:
+    GridEntity *entityOnGrid;
     enum Type {BORDER, START, END, EMPTY};
     Type type;
     Grid();
@@ -22,4 +24,8 @@ public:
     void setValue(Type type);
     bool isPassable();
     char getValue();
+    bool isFreeGrid();
+    void removeEntity();
+    GridEntity &getEntity();
+    void setEntity(GridEntity *entity);
 };

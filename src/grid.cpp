@@ -4,6 +4,7 @@ Grid::Grid(int x, int y, Type type):
     x(x),
     y(y),
     type(type){
+        entityOnGrid = nullptr;
         passable = (type != BORDER);
         setValue(type);
     }
@@ -27,6 +28,10 @@ Grid::Type Grid::getTypeOfGrid(){
     return type;
 }
 
+void Grid::setTypeOfGrid(Type type){
+    this->type = type;
+}
+
 void Grid::setValue(Type type){
     if (type == BORDER)
         value = '#';
@@ -38,10 +43,22 @@ void Grid::setValue(Type type){
         value = '_';
 }
 
-void Grid::setTypeOfGrid(Type type){
-    this->type = type;
-}
-
 bool Grid::isPassable(){
     return passable;
+}
+
+bool Grid::isFreeGrid(){
+    return (entityOnGrid == nullptr);
+}
+
+GridEntity& Grid::getEntity(){
+    return *entityOnGrid;
+}
+
+void Grid::setEntity(GridEntity* entity){
+    entityOnGrid = entity;
+}
+
+void Grid::removeEntity(){
+    entityOnGrid = nullptr;
 }

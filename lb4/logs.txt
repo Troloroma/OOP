@@ -1,0 +1,77 @@
+
+[HERO CHANGE]
+From:
+Hp: 10
+Damage: 3
+Shield: 2
+To: 
+Player info: 
+Hp: 8
+Damage: 3
+Shield: 2
+
+[ENEMY_CHANGE]
+From:
+Hp: 7
+Damage: 2
+Shield: 1
+To: 
+Enemy info: 
+Hp: 4
+Damage: 2
+Shield: 1
+
+[HERO CHANGE]
+From:
+Hp: 8
+Damage: 3
+Shield: 2
+To: 
+Player info: 
+Hp: 6
+Damage: 3
+Shield: 2
+
+[ENEMY_CHANGE]
+From:
+Hp: 4
+Damage: 2
+Shield: 1
+To: 
+Enemy info: 
+Hp: 1
+Damage: 2
+Shield: 1
+
+[HERO CHANGE]
+From:
+Hp: 6
+Damage: 3
+Shield: 2
+To: 
+Player info: 
+Hp: 4
+Damage: 3
+Shield: 2
+
+[HERO CHANGE]
+From:
+Hp: 4
+Damage: 3
+Shield: 2
+To: 
+Player info: 
+Hp: 3
+Damage: 3
+Shield: 2
+
+[ENEMY_CHANGE]
+From:
+Hp: 4
+Damage: 1
+Shield: 0
+To: 
+Enemy info: 
+Hp: 1
+Damage: 1
+Shield: 0
